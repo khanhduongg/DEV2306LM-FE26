@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>Thiết Kế HTML from</title>
+</head>
+<style>
+    h1{
+        background-color:#c53b1c ;
+        color: white;
+        margin: 0 ;
+    }
+    select{
+        width: 150px ;
+        margin: 16px;
+    }
+    table{
+        border: 1px solid #000;
+    }
+    .Priority{
+        width: 550px;
+        display: block;
+        display: flex;
+        justify-content: space-between;
+    }
+    .custom-input-Item{
+        width: 550px;
+        height: 20px;
+        border: 1px solid #ccc;
+        margin: 16px;
+
+    }
+    .custom-input-Description{
+        width: 550px;
+        height: 80px;
+        border: 1px solid #ccc;
+        margin: 16px;
+    } 
+    #brithday{
+        width: 250px;
+        margin: 16px;
+    }
+    #checkbox{
+        margin: 16px;
+
+    }
+    #sumit{
+        width: 100px;
+        height: 20px;
+        margin: 16px;
+    }
+</style>
+<body>
+<div class="container">
+    <form action="" method="post">
+        <table align="center" cellspacing="0px" cellpadding="0px" width="550px"  >
+         <tr>
+             <td> <h1>WUFOO</h1> </td>
+         </tr>
+         <tr>
+        <td style=" font-size: 25px ; margin: 16px;  ">To do List </td>
+         <br>
+         </tr>
+         <tr>
+            <td>
+                <label for="Item">Item</label>
+                <br>
+                <input type="text" class="custom-input-Item" id="name" name="name" >
+            </td>
+         </tr>
+         <tr>
+          <td>
+                <label for="Description">Description</label>
+                <br>
+                <input type="text" class="custom-input-Description" id="name" name="name" >
+           </td>
+         </tr>
+         <tr  class=" Priority">
+            <td>
+                <label for="Priority">Priority</label>
+                <br>
+                <select>
+                    <option value="">---Low---</option>
+                    <option>Hà Nội</option>
+                    <option>Đà Nẵng</option>
+                    <option>Hưng Yên</option>
+                    <option>Thái Bình</option>
+                    <option>Hồ Chí Minh</option>
+                </select>
+                <td>
+                    <label for="Category">Category</label>
+                    <br>
+                    <select>
+                        <option value="">---Personal---</option>
+                        <option>Hà Nội</option>
+                        <option>Đà Nẵng</option>
+                        <option>Hưng Yên</option>
+                        <option>Thái Bình</option>
+                        <option>Hồ Chí Minh</option>
+                    </select>
+                </td>
+            </td>
+         </tr>
+         <tr>
+            <td>
+                <label for="birthday">Due Date</label>
+                <br>
+                <input type="date"  id="birthday" name="birthday">
+
+           </td>
+         </tr>
+         <tr>
+            <td>
+                <label for="Satus">Satus</label>
+                <br>
+                <input type="checkbox" name="checkbox" id="checkbox">Done.
+            </td>
+         </tr>
+         <tr>
+            <td>
+                <input type="button" value="Sumit" id="sumit">
+            </td>
+         </tr>
+    
+
+
+            
+
+        </table>
+
+
+    </form>
+</div>
+</body>
+</html>
