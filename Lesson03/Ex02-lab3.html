@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login information system </title>
+</head>
+<style>
+    .formlogin{
+        padding: 12px;
+        margin: 24px
+    }
+</style>
+<body>
+    <div class="formlogin">
+        <form action="" method="post">
+            <div class="form-group">
+                <img src="https://devmaster.edu.vn/images/logo.png" alt="">
+            </div>
+            <div class="form-group">
+                <label for="taikhoan">Tài Khoản</label>
+                <div>
+                    <input type="text" name="taikhhoan" id="taikhoan" placeholder="Nhập Tài Khoản">
+                    <span class="error" id="errTk">(*)</span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="Mật Khẩu">Mật Khẩu</label>
+                <div>
+                    <input type="password" name="taikhhoan" id="Mật Khẩu" placeholder="Nhập Mật Khẩu">
+                    <span class="error" id="errMk">(*)</span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for=""></label>
+                <div>
+                    <input type="checkbox" name="ckghinho" id="taikhoan" >
+                    <label for="">Ghi Nhớ</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for=""></label>
+                <div>
+                    <input class="btn btn-primary" type="submit" name="btnsubmit" id="taikhoan" value="Đăng Nhập">
+                    <input  class="btn btn-primary" type="reset" name="btnreset" id="reset" value="Reset">
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
