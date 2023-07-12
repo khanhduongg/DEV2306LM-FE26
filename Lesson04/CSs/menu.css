@@ -26,6 +26,7 @@ nav {
 }
 #nav .subnav a{
     color: #000;
+    line-height: 40px;
 
 
 }
@@ -34,14 +35,14 @@ nav {
     text-transform: uppercase;
 
 }
-#nav li a {
+#nav  li a {
     text-decoration: none;
     line-height: 46px;
     padding: 0 24px;
     display: block;
 
 }
-#nav li:hover {
+#nav .subnav  li :hover {
     color: #000;
     background-color: #ccc;
 }

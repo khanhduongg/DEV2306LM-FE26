@@ -1,0 +1,27 @@
+nav#navtop{
+    width: 960;
+    margin: 0;
+    background-color: #ccc;
+    height: 40px;
+}
+nav#navtop ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+nav#navtop ul li>ul{
+    position: absolute;
+    width: 170px;
+    background-color: #ccc;
+}
+nav#navtop ul li{
+    float: left;
+    border-right: solid 1px #fff;
+
+}
+nav#navtop ul li a{
+    text-decoration: none;
+    display: block;
+    padding: 10px 30px;
+}
