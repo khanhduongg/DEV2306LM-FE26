@@ -1,0 +1,75 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+.d-flex{
+    display: flex;
+}
+.item-level-1{
+    padding: 20px;
+    position: relative;
+}
+.bg-red{
+    background: red;
+}
+.color-white{
+    color: #fff;
+}
+.item-level-1:hover,
+.item-level-2:hover
+{
+    background-color: black;
+}
+.item-level-1:hover .item,
+.item-level-2:hover .item{
+color: red;
+}
+.menu-level-2{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color:#ccc;
+    width: 120px;
+}
+.menu-level-1 :hover .menu-level-2{
+    display: block;
+}
+.item-level-2{
+    padding: 10px 20px;
+}
+
+@keyframes showDowm {
+    0%{
+        top: 0%;
+    }
+    50%{
+        top: 50%;
+    }
+    100%{
+        top: 100%;
+        transform: rotate(180deg);
+    }
+}
+.menu-level-1 :hover .menu-level-2{
+    display: block;
+    animation-name: showDowm;
+    animation-duration: 2s;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .menu-level-1{
+        display: block;
+    }
+
+  }
+  @media only screen and (max-width: 500px) {
+    .menu-level-1{
+        background-color: brown;
+    }
+
+  }
