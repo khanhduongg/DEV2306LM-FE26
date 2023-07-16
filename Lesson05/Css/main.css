@@ -1,0 +1,136 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+    text-decoration: none;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    height: 78px;
+    padding: 18px;
+    margin: 0 100px;
+
+}
+.header_logo-text > a >img{
+    border-radius: 4px;
+    padding:  4px;
+    margin: -6px 8px;
+    width: 120px;
+    height: 76px;
+    float: left;
+}
+.header_text-menu{
+    width: 600px;
+    line-height: 34px;
+
+}
+.title_level-1
+{
+    margin-top: 2px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: #0e2970;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.title_level-2{
+    font-family: 'Open Sans Condensed', sans-serif;
+    padding-left: 4px;
+    font-size: 14px;
+    margin: -6px;
+    color: #6696f4;
+    cursor: pointer;
+}
+.header_phone-icon{
+    color: black;
+    font-size: 12px;
+    padding: 12px;
+    margin: 12px 8px;
+    animation: ring 1.5s ease infinite;
+}
+
+.header_phone-icon:hover {
+    color: firebrick;
+    height: 20px;
+
+}
+#nav_menu{
+    display: flex;
+    justify-content: center;
+    height: 46px;
+    width: 100%;
+    margin-top: 18px;
+    background: #b2b2b2;
+    box-shadow: 0px 5px 31px -6px rgba(0,0,0,0.75);
+    z-index: 9999999999999;
+}
+#nav_menu li{
+    display: inline-block;
+    position: relative;
+}
+#nav_menu >li >a{
+    color: white;
+
+}
+#nav_menu>li>a{
+
+}
+#nav_menu li a{
+    line-height: 46px;
+    padding: 14px;
+    font-size: 14px;
+    font-family: 'Quicksand', sans-serif;
+
+}
+#nav_menu > li:hover>a{
+    background-color: black;
+}
+#nav_menu.subnav_menu-1 li:hover a{
+    background-color: #ccc;
+}
+.subnav_menu-1
+.subnav_menu-2{
+    position: absolute;
+    background-color: #ccc;
+}
+#nav_menu .subnav_menu-1,
+.subnav_menu-2{
+    position: absolute;
+    top: 46px;
+    left: 0;
+    display: none;
+
+}
+#nav_menu .nav-arrow-icon{
+    font-size: 14px;
+
+}
+#slider{
+    padding-top: 50%;
+    height: 500px;
+    background: url(/Lesson05/img/devmaster-lap-trinh-asp-net-mvc-5-webapi-angularjs.jpg) top center/ cover no-repeat;
+
+}
+@keyframes ring {
+    0%{
+        transform: rotate(0);
+    } 
+    2%{
+        transform: rotate(-20deg);
+    }
+    5%{
+        transform: rotate(10deg);
+
+    }
+    10%{
+        transform: rotate(-20deg);
+
+    }
+    20%,100%{
+        transform: rotate(0);
+
+    }
+    
+}
