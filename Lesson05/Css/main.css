@@ -8,10 +8,10 @@
 header{
     display: flex;
     justify-content: space-between;
-    width: 1200px;
+    width: 1140px;
     height: 78px;
     padding: 18px;
-    margin: 0 365px;
+    margin: auto;
 
 }
 .header_logo-text > a >img{
@@ -59,6 +59,7 @@ header{
 }
 #nav_menu{
     display: flex;
+    align-items: center;
     justify-content: center;
     height: 46px;
     width: 100%;
@@ -66,6 +67,9 @@ header{
     background: #b2b2b2;
     box-shadow: 0px 5px 31px -6px rgba(0,0,0,0.75);
     z-index: 9999999999999;
+}
+#nav_menu>li{
+    padding: 15px;
 }
 .menu_sub-item{
     position: relative;
@@ -75,14 +79,19 @@ header{
 
 }
 #nav_menu li a{
-    line-height: 46px;
-    padding: 14px;
     font-size: 14px;
     font-family: 'Quicksand', sans-serif;
 
 }
-#nav_menu > li:hover>a{
+.subnav_menu--item{
+    padding: 8px 12px;
+}
+#nav_menu > li:hover {
     background-color: black;
+}
+.menu_sub_item:hover >li >a{
+    animation-name: showDowm;
+    animation-duration: 4s;
 }
 .menu_sub-item > ul >a {
     display: inline-block;
@@ -103,7 +112,11 @@ header{
 .menu_sub-item:hover .subnav_menu-1{
     display: block;
 }
-.subnav_menu-1:hover a{
+.subnav_menu--item > a{
+    color: black;
+}
+.subnav_menu--item:hover{
+    color: black;
     background-color: #e0e0e0;
 }
 
@@ -113,9 +126,9 @@ header{
 }
 #slider{
     /* display: none; */
-    padding-top: 50%;
+    padding-top: 35%;
     height: 500px;
-    background: url(/Lesson05/img/devmaster-lap-trinh-asp-net-mvc-5-webapi-angularjs.jpg) top center/ cover no-repeat;
+    background: url(/Lesson05/img/devmaster-lap-trinh-asp-net-mvc-5-webapi-angularjs.jpg) top center/ contain no-repeat;
 
 }
 .text-header{
@@ -126,20 +139,31 @@ header{
 }
 .khoahoc_list{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     padding: 12px;
-    margin: 0 200px;
+
+    /* margin: 0 200px; */
 }
 .khoahoc_list img:hover {
     box-shadow: 0px 5px 31px -6px rgba(0,0,0,0.75);
     transform:scale(1) translateY(-5%) ;
 }
+
 .khoahoc_item>img{
+    width: 90%;
     border-radius: 20px;
     box-shadow: 0px 5px 31px -6px rgba(0,0,0,0.75);
 }
-@keyfames room{
-    tra
+@keyframes showDowm {
+    0%{
+        top: 0%;
+    }
+    50%{
+        top: 50%;
+    }
+    100%{
+        top: 100%;
+    }
 }
 @keyframes ring {
     0%{
