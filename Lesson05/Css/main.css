@@ -89,10 +89,7 @@ header{
 #nav_menu > li:hover {
     background-color: black;
 }
-.menu_sub_item:hover >li >a{
-    animation-name: showDowm;
-    animation-duration: 4s;
-}
+
 .menu_sub-item > ul >a {
     display: inline-block;
 }
@@ -108,6 +105,7 @@ header{
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px;
     display: none;
+    /* animation: showDowm 2s ease infinite; */
 }
 .menu_sub-item:hover .subnav_menu-1{
     display: block;
@@ -156,13 +154,12 @@ header{
 }
 @keyframes showDowm {
     0%{
-        top: 0%;
+        bottom:-30%;
     }
-    50%{
-        top: 50%;
-    }
+
     100%{
-        top: 100%;
+        bottom:0;
+
     }
 }
 @keyframes ring {
