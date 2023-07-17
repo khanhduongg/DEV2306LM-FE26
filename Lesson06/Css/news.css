@@ -1,0 +1,28 @@
+.news-page{
+    margin-top: 5rem;
+    margin-bottom: 1.5rem;
+}
+.news-page-content{
+    width: 80%;
+    margin: 2rem auto;
+}
+.news-page .news-title{
+    overflow: hidden;
+   display: -webkit-box;
+   -webkit-line-clamp: 2; /* number of lines to show */
+           line-clamp: 2; 
+   -webkit-box-orient: vertical;
+   min-height: 3rem;
+}
+.news-page .news-page-content{
+    overflow: hidden;
+   display: -webkit-box;
+   -webkit-line-clamp: 3; /* number of lines to show */
+           line-clamp: 3; 
+   -webkit-box-orient: vertical;
+}
+.news-page{
+    background-image: url(	http://acatea.vn/Content/images/images/tin-tuc/background-tintuc.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
