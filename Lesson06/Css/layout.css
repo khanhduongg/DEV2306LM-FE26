@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
     list-style: none;
-    color: black;
     text-decoration: none;
 }
 html{
@@ -110,17 +109,4 @@ nav.menu{
         background-repeat: repeat-y;
     }
     
-}
-.footer {
-    width: 80%;
-    margin: auto;
-}
-.footer-logo{
-    width: 380px;
-}
-.footer-logo-item{
-    width: 8rem;
-}
-.footer-content{
-    padding: 0 24px;
 }

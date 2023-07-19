@@ -42,17 +42,23 @@
     background-color: #69922b;
 }
 .footer{
-    background: #ccc;
+    background: #f1f1e7;
     width: 100%;
 }
 .footer-cotainer{
     justify-content: center;
     font-size: 1rem;
 }
+.footer-left{
+    padding: 1rem;
+    font-size: 0.8rem;
+}
 .footer-center{
-    padding: 40px;
+    padding: 2rem;
+    font-size: 0.8rem;
+
 }
 .footer-right{
-    padding: 40px;
-
+    padding: 2rem;
+    font-size: 0.8rem;
 }
