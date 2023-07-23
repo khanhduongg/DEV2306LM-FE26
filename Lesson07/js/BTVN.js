@@ -28,21 +28,40 @@ if(a==0){
 }
 
 // Bài 2 đếm số lần suất hiện của 66
- let array = [1,5,9,100,55,66,66,66,4,5,66,65,66,76,109,23,66,34,23,43,34];
+ var array = [1,5,9,100,55,66,66,66,4,5,66,65,66,76,109,23,66,34,23,43,34];
 
  
 /*Tạo hàm đếm số lần xuất hiện của một phần tử trong mảng JavaScript*/
-function count_element_in_array(array, x){
-    let count = 0;
-    for(let i=0;i<array.length;i++){
-      if(array[i]==x) //Tìm thấy phần tử giống x trong mảng thì cộng biến đếm
-        count ++;
+var sum = 0;
+var x= 66;
+ for(var i=0; i<array.length;i++){
+   if(array[i] == x){
+         sum++
     }
-    console.log( "Phan tu " +  x  + " xuat hien " + count +  " lan");
+ }
+ console.log("Phần tử "+x+" xuất hiện "+sum+" lần");
+
+
+// Lab5.1 kiểm tra mật khẩu 
+var password = getValue('password');
+var repassword = getValue('repassword');
+if (password == '' || password.length < 8 || password != repassword){
+    flag = false;
+    showError('password', 'Vui lòng kiểm tra lại Password');
 }
 
 
-
+//lab 5.1 tạo dãy số 
+var array= [0,1,2,3,4,5,6,7,8,9]
+function check(arr){
+    const Arr =[]
+    for(var i=0; i<arr.length; i++){
+        Arr.push(i)
+        const newStr = Arr.join("");    
+        document.write(newStr + "<br>")    
+    }
+}
+check(array)
 
 // if(a == 0){
 
