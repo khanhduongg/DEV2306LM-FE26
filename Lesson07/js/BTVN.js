@@ -41,6 +41,29 @@ var x= 66;
  }
  console.log("Phần tử "+x+" xuất hiện "+sum+" lần");
 
+ // C2
+var max =array.length;
+var arrayTemp = [];
+for(let i = 0;i <max;i++){
+    let check = true ;
+    for( let j =i ; j<max ; j++){
+        if(array[i] == array[j] && i != j) check = false ;
+    }
+    if(check) arrayTemp.push(array[i]);
+}
+var maxTemp = arrayTemp.length;
+for(let i = 0;i <maxTemp;i++){
+    let count = 0;
+    for( let j = i ; j<maxTemp ; j++){
+        if(arrayTemp[i] == array[j] );{
+            count ++;
+        }
+    }
+    console.log("giá trị" + arrayTemp[j] + "xuất hiện " + count +"lan");
+    count= 0 ;
+}
+
+
 
 // Lab5.1 kiểm tra mật khẩu 
 var password = getValue('password');
