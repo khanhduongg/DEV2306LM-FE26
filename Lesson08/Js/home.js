@@ -60,24 +60,24 @@
 
 // Lấy thông tin 
 
-var userInfor1 = {
-    hieght: 170,
-    address :"dev",
-    name : "test",
-    pass : "123456"
-}
-var userInfor2 = {
-    hieght: 170,
-    address :"html",
-    name : "test",
-    pass : "123456"
-}
-var userInfor3 = {
-    hieght: 170,
-    address :"dev",
-    name : "java",
-    pass : "123456"
-}
+// var userInfor1 = {
+//     hieght: 170,
+//     address :"dev",
+//     name : "test",
+//     pass : "123456"
+// }
+// var userInfor2 = {
+//     hieght: 170,
+//     address :"html",
+//     name : "test",
+//     pass : "123456"
+// }
+// var userInfor3 = {
+//     hieght: 170,
+//     address :"dev",
+//     name : "java",
+//     pass : "123456"
+// }
 // function checkData(){ 
 //     let check =false;
 //         for(let i = 0 ; i<listUsername.length;i++){
@@ -102,7 +102,7 @@ var userInfor3 = {
 //     }
 // }
 
-var listUsername=[userInfor2,userInfor1,userInfor3]
+// var listUsername=[userInfor2,userInfor1,userInfor3]
 
 // function userInfor(){
 //     var username = document.getElementById('username').value;

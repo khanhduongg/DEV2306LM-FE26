@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form action="">
+        <table width="350px ">
+
+            <tr>
+                <td> Username</td>
+                <td>
+                    <input type="text" name="userName" id="username" placeholder="Nhập tên đăng nhập">
+                </td>
+            </tr>
+            <tr>
+                <td>Password </td>
+                <td>
+                    <input type="password" name="password" id="password" placeholder="Nhập mật khẩu">
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="button" value="login" id="login" name="login" onclick="checkLogin()">
+                </td>
+            </tr>
+        </table>
+
+    </form>
+
+    <script>
+        function checkLogin(){
+            var username = document.getElementById("username");
+            var password = document.getElementById("password");
+            if(username.value=""){
+                alert('Bạn chưa nhập user Name');
+                username.focus();
+            }else if (password.value==""){
+                alert('Bạn chưa nhập password');
+                password.focus();
+            }
+        }
+
+    </script>
+</body>
+</html>
