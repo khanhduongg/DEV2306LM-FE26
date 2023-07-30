@@ -184,7 +184,7 @@ var arrayobject =
 
 
 function checkList (){
-    var value =document.getElementById("listphuong").value;
+    var value = document.getElementById("listphuong").value;
      for(let i = 0; i <arrayobject.length;i++ ){
         for(let j = 0;j < arrayobject[i].listQuan.length;j++){
             for(let k = 0;k< arrayobject[i].listQuan[j].listphuong.length;k++){
@@ -196,4 +196,24 @@ function checkList (){
      }
 }
 
+// var listTemp = [];
+// var objTemp ={};
+// objTemp.tenTP="";
+// objTemp.tenQuan="";
+// objTemp.tenphuong="";
 
+
+// for(let index = 0 ;index <arrayobject.length;index ++){
+//     objTemp.tenTP = arrayobject[index].TP;
+//     for(let let i = 0 ;i <arrayobject.[index].tenQuan.length;i ++){
+//         objTemp.tenQuan=arrayobject[index].tenQuan[i].tenQuan;
+//         for(let let j = 0 ;j <arrayobject[index].tenQuan.length;i ++){
+//
+//         }
+//     }
+// }
+//
+//
+//
+//
+//
