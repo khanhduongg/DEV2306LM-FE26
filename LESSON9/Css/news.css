@@ -34,9 +34,6 @@
     padding: 10px;
 
 }
-#page-number>li:hover>a {
-    background-color: red;
-}
 
 
 @media only screen and (max-width: 600px) {
